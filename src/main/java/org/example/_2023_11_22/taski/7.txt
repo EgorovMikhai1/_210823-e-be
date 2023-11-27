@@ -44,7 +44,7 @@ DeliveryPerson, OrderManager, Kitchen, DeliveryService и интерфейсов
 Методы для управления заказами.
 
 3.9. Класс Kitchen:
-Поля: List<Chef> chefs, List<Order> cookingOrders, boolean isOpen.
+Поля: List<Chef> chefs, List<Order> cookingOrders, boolean isOpen. //
 Методы для управления кухней и процессом приготовления.
 
 3.10. Класс DeliveryService:

@@ -1,6 +1,10 @@
 package org.example._2023_11_20;
 
+import lombok.Getter;
+
+@Getter
 public class Arr {
+    private int test;
     private static int sum(int[] array) {
         int result = 0;
         int start = 0;

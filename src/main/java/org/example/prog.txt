@@ -65,7 +65,6 @@ Spring Boot: scheduled jobs
 
 ------------
 
-
 CRUD::
 Account || getAllAccountWhereStatusIs Active/Remote/Pending/Blocked  findAccountsWhereProductIdIs....AndStatusIs.....
 Agreement || findAgreementsWhereManagerIDIs...  findAgreementsWhereClientIdIs....
@@ -73,15 +72,6 @@ Client || getAllClientsWhereStatusActive....  getAllClientsWhereBalanceMoreThan.
 Manager || findAllManagersSortedByProductQuantity
 Product || findAllProductsWhereAgreementsQuantityMoreThan....   findAllChangedProducts
 Transaction || findAllTransactionsWhereClientIdIs...   findAllTransactionsWhereAccountCurrencyIs...
-
-
-
-
-
-
-
-
-
 
 
 

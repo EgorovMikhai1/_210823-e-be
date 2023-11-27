@@ -1,8 +1,14 @@
 package org.example._2023_11_22;
 
 import java.io.Serializable;
+import java.util.ArrayList;
 
 public abstract class Hero {
+
+    public Hero() {
+
+    }
+
     abstract void run();
 }
 
