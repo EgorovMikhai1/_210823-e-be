@@ -1,9 +1,11 @@
 Техническое задание:
 Система Управления Библиотекой
 
-- Enum Genre (Жанр)
-    Поля: FICTION, NON_FICTION, SCIENCE, FANTASY, HISTORY, BIOGRAPHY
-    BookStatus (Статус Книги) например - AVAILABLE, BORROWED, RESERVED, UNDER_REPAIR, LOST
+- Enum
+    Genre
+        Поля: FICTION, NON_FICTION, SCIENCE, FANTASY, HISTORY, BIOGRAPHY
+    BookStatus
+        Поля: AVAILABLE, BORROWED, RESERVED, UNDER_REPAIR, LOST
 
 - Абстрактный класс:
     LibraryItem (Элемент Библиотеки)
