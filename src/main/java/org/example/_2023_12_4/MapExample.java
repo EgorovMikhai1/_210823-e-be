@@ -25,11 +25,12 @@ public class MapExample {
 //            System.out.println(str);
 //        }
 
-        for (Map.Entry<Integer, String> entry : map.entrySet()) {
+        for (Integer entry : map.keySet()) {
             System.out.println(entry);
         }
 
         Map<Student, Double> studentIntegerMap = new HashMap<>();
         studentIntegerMap.put(new Student(), 7.8d);
+
     }
 }
