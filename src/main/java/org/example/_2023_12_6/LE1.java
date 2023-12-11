@@ -7,6 +7,7 @@ import java.util.*;
 public class LE1 {
     private static final Faker FAKER = new Faker();
     private static final Random RANDOM = new Random();
+
     public static void main(String[] args) {
         List<Car> carList = new ArrayList<>();
         for (int i = 0; i < 10; i++) {
@@ -21,7 +22,7 @@ public class LE1 {
     }
 }
 
-class Car implements Comparable<Car>{
+class Car implements Comparable<Car> {
     private String model;
     private int horsePower;
 
