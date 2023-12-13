@@ -1,0 +1,5 @@
+- Доделать Stack
+- Реализовать QUEUE
+- Реализуйте функцию, которая использует Stack<String> для реверса отдельных символов в строке.
+  public static String reverse(String str)
+-
