@@ -13,3 +13,8 @@
          map.put("B", "D");
 - Инвертируйте Map<String, String>, чтобы ключи стали значениями, а значения ключами.
   public static Map<String, String> invert(Map<String, String> map)
+- Написать функцию, которая выполняет факторизацию(погуглить) числа и возвращает
+  ее в виде Map, где ключ - это простой множитель, а значение - степень этого множителя.
+  public Map<Integer, Integer> primeFactorization(int number)
+- Написать функцию, которая проверяет, являются ли две строки анаграммами друг друга.
+  public boolean areAnagrams(String str1, String str2)
