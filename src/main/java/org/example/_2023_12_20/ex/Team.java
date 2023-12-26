@@ -20,14 +20,6 @@ public class Team<P extends Participant> {
         this.name = name;
     }
 
-    public List<P> getParticipants() {
-        return participants;
-    }
-
-    public void setParticipants(List<P> participants) {
-        this.participants = participants;
-    }
-
     public void addNewParticipant(P newParticipant) {
         participants.add(newParticipant);
     }
@@ -36,7 +28,7 @@ public class Team<P extends Participant> {
         String winner;
         Random random = new Random();
         int i = random.nextInt(2);
-        if(i == 0) {
+        if(i == 1) {
             winner = this.name;
         } else {
             winner = teamPlayWith.name;

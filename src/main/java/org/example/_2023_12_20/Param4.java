@@ -7,6 +7,7 @@ import java.util.List;
 public class Param4 {
     public static void main(String[] args) {
         List<Integer> list = Arrays.asList(1, 5, 3);
+
       //  System.out.println(Gen.get0(list));
     }
 }

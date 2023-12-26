@@ -1,6 +1,6 @@
 package org.example._2023_12_20.ex;
 
-public class Adult extends Participant{
+public class Adult extends Participant {
     public Adult(String name, int age) {
         super(name, age);
     }
