@@ -2,8 +2,8 @@ package org.example._2024_01_08.helper;
 
 public class Taski {
     /**
-     * List<Integer> numbers = Arrays.asList(1.txt, 2, 3, 4, 5, 6, 7, 8, 9, 10);
-     * //     * -- Отфильтровать нв четные и не четные
+     * List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
+     * //     * -- Отфильтровать нв четные или не четные
      * //     * -- Просуммировать все числа
      * //     * -- Получить среднее значение
      * //     * -- Найти суммы чисел кратных 3 и 5
@@ -29,7 +29,7 @@ public class Taski {
      * //
      * //    }
      * //
-     * //    //Задание 3: Суммирование списка чисел
+     * //Задание 3: Суммирование списка чисел
      * //    private static void m3() {
      * //        List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5);
      * //
@@ -49,7 +49,7 @@ public class Taski {
      *
      * //Задание 8:Нахождение суммы чисел, кратных 3 и 5, из списка чисел
      * //    private static void m8() {
-     * //        List<Integer> numbers = Arrays.asList(1.txt, 2, 3, 4, 5, 6, 7, 8, 9, 10);
+     * //        List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
      * //
      * //    }
      * //Задание 9:Получение списка слов, содержащих только уникальные символы, из списка строк

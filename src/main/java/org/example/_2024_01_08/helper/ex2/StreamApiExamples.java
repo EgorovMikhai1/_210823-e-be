@@ -20,11 +20,11 @@ public class StreamApiExamples {
         Optional<Integer> max = numbers.stream().max(Integer::compareTo);
         max.ifPresent(value -> System.out.println("Max: " + value));
 
-        // 3. min(): Выводит минимальный элемент в потоке (1.txt в данном случае)
+        // 3. min(): Выводит минимальный элемент в потоке (1 в данном случае)
         Optional<Integer> min = numbers.stream().min(Integer::compareTo);
         min.ifPresent(value -> System.out.println("Min: " + value));
 
-        // 4. findFirst(): Выводит первый элемент в потоке (1.txt в данном случае)
+        // 4. findFirst(): Выводит первый элемент в потоке (1 в данном случае)
         Optional<Integer> first = numbers.stream().findFirst();
         first.ifPresent(value -> System.out.println("First: " + value));
 
@@ -45,7 +45,7 @@ public class StreamApiExamples {
         List<Integer> skipList = numbers.stream().skip(5).toList();
         System.out.println("Skip: " + skipList);
 
-        // 9. sorted(): Выводит отсортированный список элементов (1.txt, 1.txt, 1.txt, 3, 4, 5, 6, 7, 8, 20 в данном случае)
+        // 9. sorted(): Выводит отсортированный список элементов (1, 1, 1, 3, 4, 5, 6, 7, 8, 20 в данном случае)
         List<Integer> sortedList = numbers.stream().sorted().toList();
         System.out.println("Sorted: " + sortedList);
 
@@ -53,11 +53,11 @@ public class StreamApiExamples {
         List<Integer> peekList = numbers.stream().peek(System.out::println).toList();
         System.out.println("Peek: " + peekList);
 
-        // 11. limit(): Выводит первые 3 элемента в потоке (1.txt, 20, 3 в данном случае)
+        // 11. limit(): Выводит первые 3 элемента в потоке (1, 20, 3 в данном случае)
         List<Integer> limitList = numbers.stream().limit(3).toList();
         System.out.println("Limit: " + limitList);
 
-        // 12. toArray(): Преобразует поток в массив ([1.txt, 20, 3, 4, 1.txt, 1.txt, 5, 6, 7, 8] в данном случае)
+        // 12. toArray(): Преобразует поток в массив ([1, 20, 3, 4, 1, 1, 5, 6, 7, 8] в данном случае)
         Integer[] arr = numbers.toArray(Integer[]::new);
         System.out.println("Array: " + Arrays.toString(arr));
 
