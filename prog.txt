@@ -13,7 +13,7 @@
 ++Java Set implementation. HashSet.
 ++Comparing objects in Java. Comparator, Comparable. Method sort.
 ++Data structures 'Queue', 'Stack'. Custom ArrayDeque implementation.
-Data structure 'Map'. Object.hashCode, HashMap implementation.
+++Data structure 'Map'. Object.hashCode, HashMap implementation.
 Trees, Binary Trees, Tree Map.
 Graphs. Practice.
 
@@ -26,17 +26,17 @@ Java Streams: Flat map.
 Java Streams: Collectors and Custom Collectors.
 
 *********************Input and Output in Java.*********************
-Introduction to Input and Output in Java
+Introduction to Input and Output in Java!!
 Reading/Writing of bytes.
 Reading/Writing of strings.
 
 *********************************General and repetition***************************
-Regular expressions. Basics. Regular Expressions, Java RegExp
+Regular expressions. Basics. Regular Expressions, Java RegExp!!
 Class String and its methods. Immutable. StringBuilder, StringBuffer, performance test.
 Generics
-Object.equals
+++Object.equals
 Exceptions
-Unit testing. JUnit.
+Unit testing. JUnit.!!!!!
 LocalDate, LocalDateTime, ZonedDateTime, exercises.
 Annotations.
 
@@ -52,7 +52,7 @@ Threads Executors.
 Apache Maven, сборка проектов.
 Принципы программирования: DRY, YAGNI, KISS,
 SOLID.
-++Reflections.
+Reflections.
 Spring Framework: Introduction, Context and Beans
 Spring Framework: Beans configuration
 Spring Boot: Onion (Hexagonal) architecture

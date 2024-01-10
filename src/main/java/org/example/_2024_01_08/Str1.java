@@ -23,6 +23,7 @@ public class Str1 {
         Arrays.stream(arr);
 
         Stream<String> stream = Stream.of("WE", "AS", "OI");
+
     }
 
     public boolean fil(Integer i) {

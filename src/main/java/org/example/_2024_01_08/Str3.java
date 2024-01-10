@@ -16,6 +16,5 @@ public class Str3 {
         //min, max
         list.stream().min(Integer::compareTo);
         list.stream().max(Integer::compareTo);
-
     }
 }
