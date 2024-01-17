@@ -1,0 +1,31 @@
+Задача 1: Напишите метод, который принимает список списков целых чисел
+и преобразует его в один список
+    public List<Integer> flattenListOfLists(List<List<Integer>> listOfLists) {
+
+    }
+
+Задача 2: Напишите метод, который преобразует список объектов с вложенными списками в один список всех вложенных элементов.
+class User {
+    private String name;
+    private List<String> skills;
+}
+
+public List<String> getAllSkills(List<User> users) {
+}
+
+Задача 3: Напишите метод, который объединяет строки из списка объектов.
+class Book {
+    private String title;
+    private List<String> authors;
+}
+
+public List<String> getAuthorsTitles(List<Book> books) {
+}
+
+Задача 4: Напишите метод, который преобразует Map в список значений.
+public List<String> flattenMap(Map<String, List<String>> map) {
+}
+
+Задача 5: Напишите метод, который принимает список списков и фильтрует все четные числа, а затем умножает их на 2.
+public List<Integer> processAndFilter(List<List<Integer>> listOfLists) {
+}
