@@ -7,8 +7,6 @@ import java.io.IOException;
 //txt
 public class ReaderEx {
     public static void main(String[] args) {
-
-
         try (FileReader reader = new FileReader("prog.txt")) {
             int ch;
 
