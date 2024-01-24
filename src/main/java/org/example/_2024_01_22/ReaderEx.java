@@ -1,6 +1,5 @@
 package org.example._2024_01_22;
 
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 
