@@ -1,4 +1,4 @@
-package org.example._2023_12_11;
+package main.java.org.example._2023_12_11;
 
 import com.github.javafaker.Faker;
 
