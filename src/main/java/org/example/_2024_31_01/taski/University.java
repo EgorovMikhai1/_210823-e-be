@@ -6,6 +6,9 @@ public class University {
     private String name;
     private List<Department> departments;
 
+    public University() {
+    }
+
     public University(String name, List<Department> departments) {
         this.name = name;
         this.departments = departments;

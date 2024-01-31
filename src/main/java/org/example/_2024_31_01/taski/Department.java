@@ -7,6 +7,9 @@ public class Department {
     private String head;
     private List<Course> courses;
 
+    public Department() {
+    }
+
     public Department(String name, String head, List<Course> courses) {
         this.name = name;
         this.head = head;

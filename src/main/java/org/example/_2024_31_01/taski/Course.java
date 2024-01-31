@@ -9,6 +9,9 @@ public class Course {
     private String professor;
     private List<String> topics;
 
+    public Course() {
+    }
+
     public Course(String id, String title, int credits, String professor, List<String> topics) {
         this.id = id;
         this.title = title;
