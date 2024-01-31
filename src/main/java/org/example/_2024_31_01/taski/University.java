@@ -1,7 +1,10 @@
 package main.java.org.example._2024_31_01.taski;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
 import java.util.List;
 
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class University {
     private String name;
     private List<Department> departments;
@@ -28,5 +31,13 @@ public class University {
 
     public void setDepartments(List<Department> departments) {
         this.departments = departments;
+    }
+
+    @Override
+    public String toString() {
+        return "University{" +
+                "name='" + name + '\'' +
+                ", departments=" + departments +
+                '}';
     }
 }

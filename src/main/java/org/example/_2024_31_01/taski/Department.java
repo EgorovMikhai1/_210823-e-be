@@ -39,4 +39,13 @@ public class Department {
     public void setCourses(List<Course> courses) {
         this.courses = courses;
     }
+
+    @Override
+    public String toString() {
+        return "Department{" +
+                "name='" + name + '\'' +
+                ", head='" + head + '\'' +
+                ", courses=" + courses +
+                '}';
+    }
 }

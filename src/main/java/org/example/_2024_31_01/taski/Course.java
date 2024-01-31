@@ -59,4 +59,15 @@ public class Course {
     public void setTopics(List<String> topics) {
         this.topics = topics;
     }
+
+    @Override
+    public String toString() {
+        return "Course{" +
+                "id='" + id + '\'' +
+                ", title='" + title + '\'' +
+                ", credits=" + credits +
+                ", professor='" + professor + '\'' +
+                ", topics=" + topics +
+                '}';
+    }
 }
