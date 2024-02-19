@@ -2,9 +2,15 @@ package main.java.org.example._2024_02_19;
 
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.CsvSource;
+import org.junit.jupiter.params.provider.MethodSource;
 import org.junit.jupiter.params.provider.ValueSource;
 import org.mockito.junit.jupiter.MockitoExtension;
+
+import java.util.Arrays;
+import java.util.List;
+import java.util.stream.Stream;
 
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
@@ -58,28 +64,25 @@ public class ComplexOperationsServiceTest {
             // Assume no exception for valid URLs
         }
     }
+    // For checkEmailListConsistency and other methods requiring complex inputs or multiple parameters,
+    // you might use @MethodSource to supply a Stream of arguments.
+    // Example setup for @MethodSource (not fully implemented due to complexity):
+    public static Stream<Arguments> emailListProvider() {
+        return Stream.of(
+                Arguments.of(Arrays.asList("valid@email.com", "invalid-email"), false),
+                Arguments.of(Arrays.asList("valid@email.com", "also.valid@email.com"), true)
+        );
+    }
 
+    // Example test method using @MethodSource for email lists
+    @ParameterizedTest
+    @MethodSource("emailListProvider")
+    void checkEmailListConsistency(List<String> emails, boolean isValid) {
+        if (!isValid) {
+            assertThrows(IllegalArgumentException.class, () -> service.checkEmailListConsistency(emails));
+
+        } else {
+            // Assume no exception for valid email lists
+        }
+    }
 }
-
-// For checkEmailListConsistency and other methods requiring complex inputs or multiple parameters,
-// you might use @MethodSource to supply a Stream of arguments.
-// Example setup for @MethodSource (not fully implemented due to complexity):
-// public static Stream<Arguments> emailListProvider() {
-//     return Stream.of(
-//         Arguments.of(Arrays.asList("valid@email.com", "invalid-email"), false),
-//         Arguments.of(Arrays.asList("valid@email.com", "also.valid@email.com"), true)
-//     );
-// }
-
-// Example test method using @MethodSource for email lists
-// @ParameterizedTest
-// @MethodSource("emailListProvider")
-// void checkEmailListConsistency(List<String> emails, boolean isValid) {
-//     if (!isValid) {
-//         assertThrows(IllegalArgumentException.class, () -> service.checkEmailListConsistency(emails));
-//     } else {
-//         // Assume no exception for valid email lists
-//     }
-// }
-
-// Continue writing tests for the remaining methods follo

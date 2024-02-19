@@ -38,6 +38,12 @@ import java.util.stream.Collectors;
  */
 public class ComplexOperationsService {
 
+    /**
+     * - понять что делает метод
+     * - понять какие у него поведения
+     * - понять пограничные значения
+     * - написать параметризованный тест с использованием пограничных значений
+     */
     public void validatePasswordStrength(String password) {
         // Password must contain at least 8 characters, including a digit, a lowercase letter, an uppercase letter, and a special character
         String regex = "^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#&()–[{}]:;',?/*~$^+=<>]).{8,}$";
@@ -63,7 +69,7 @@ public class ComplexOperationsService {
         try {
             parsedNumbers = Arrays.stream(numbers.split(","))
                     .map(Double::parseDouble)
-                    .collect(Collectors.toList());
+                    .toList();
         } catch (NumberFormatException e) {
             throw new IllegalArgumentException("String contains non-numeric values.");
         }
