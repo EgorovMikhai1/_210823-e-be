@@ -17,31 +17,36 @@ public class WN {
 
 class Storage {
     private int item = 0;
+    private final Object lock = new Object();
 
-    public synchronized void getItem() {
-        while (item <= 5) {
-            try {
-                wait();
-            } catch (InterruptedException e) {
-                throw new RuntimeException(e);
+    public void getItem() {
+        synchronized (lock) {
+            while (item < 1) {
+                try {
+                    lock.wait();
+                } catch (InterruptedException e) {
+                    throw new RuntimeException(e);
+                }
             }
+            item--;
+            System.out.println("Customer has bought one item. Quantity: " + item);
+            lock.notify();
         }
-        item--;
-        System.out.println("Customer has bought one item. Quantity: " + item);
-        notify();
     }
 
-    public synchronized void putItem() {
-        while (item > 5) {
-            try {
-                wait();
-            } catch (InterruptedException e) {
-                throw new RuntimeException(e);
+    public void putItem() {
+        synchronized (lock) {
+            while (item >= 5) {
+                try {
+                    lock.wait();
+                } catch (InterruptedException e) {
+                    throw new RuntimeException(e);
+                }
             }
+            item++;
+            System.out.println("Factory put one item into the Storage. Quantity: " + item);
+            lock.notify();
         }
-        item++;
-        System.out.println("Factory put one item into the Storage. Quantity: " + item);
-        notify();
     }
 }
 
@@ -55,11 +60,6 @@ class Producer implements Runnable {
     @Override
     public void run() {
         for (int i = 0; i < 10; i++) {
-            try {
-                Thread.sleep(1111);
-            } catch (InterruptedException e) {
-                throw new RuntimeException(e);
-            }
             storage.putItem();
         }
     }
@@ -75,11 +75,6 @@ class Consumer implements Runnable {
     @Override
     public void run() {
         for (int i = 0; i < 10; i++) {
-            try {
-                Thread.sleep(1111);
-            } catch (InterruptedException e) {
-                throw new RuntimeException(e);
-            }
             storage.getItem();
         }
     }
