@@ -1,6 +1,9 @@
 package main.java.org.example._2024_31_01;
 
+import java.math.BigDecimal;
+
 public class TestObject {
+
     private String name;
     private int age;
 
