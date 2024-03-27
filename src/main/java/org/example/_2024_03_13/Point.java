@@ -21,7 +21,7 @@ public class Point {
      * withSharp = ##rt#r##rrr#r#
      * fin = rr
      *
-     * [ -1 2 4 3 -5] target 3
+     * [-1 2 4 3 -5] target 3
       */
     private boolean getEq(String withSharp, String fin) {
         return true;

@@ -1,5 +1,7 @@
 package main.java.org.example._2024_03_04;
 
+import lombok.Data;
+
 public class WN {
     public static void main(String[] args) {
         Storage storage = new Storage();
@@ -50,6 +52,7 @@ class Storage {
     }
 }
 
+@Data
 class Producer implements Runnable {
     Storage storage;
 
